@@ -1,0 +1,107 @@
+# Moon Phases HUD - Traducción al español.
+# Formato: clave = valor   (una por línea, UTF-8). Las líneas que empiezan por # son comentarios.
+# Escribe \n dentro de un valor para un salto de línea. Las claves que falten usan el inglés.
+# Ruta: Data\Interface\Translations\MoonPhaseHUD_spanish.txt
+
+# ---- nombres de las fases lunares (se muestran bajo el widget) ----
+phase.0 = Luna nueva
+phase.1 = Creciente
+phase.2 = Cuarto creciente
+phase.3 = Gibosa creciente
+phase.4 = Luna llena
+phase.5 = Gibosa menguante
+phase.6 = Cuarto menguante
+phase.7 = Menguante
+
+# ---- nombres propios de las lunas ----
+moon.masser = Masser
+moon.secunda = Secunda
+
+# ---- menú de ajustes: títulos de sección ----
+settings = Ajustes
+section.behaviour = Comportamiento
+section.moons = Lunas
+section.label = Texto de fase
+section.placement = Posición
+section.language = Idioma
+section.preview = Ahora mismo
+
+# ---- menú de ajustes: comportamiento ----
+enabled = Activado
+mode = Modo de visualización
+mode.0 = Siempre
+mode.1 = Por tiempo (tecla)
+mode.2 = Conmutar (tecla)
+mode.3 = Periódico
+mode.tip = Siempre: visible siempre que no haya ningún menú abierto.\nPor tiempo: visible unos segundos tras pulsar la tecla.\nConmutar: la tecla muestra y oculta el widget.\nPeriódico: aparece cada pocas horas de juego.
+hotkey = Tecla:
+hotkey.click = (clic para cambiar)
+hotkey.capture = Pulsa una tecla... (Esc para cancelar)
+showDuration = Visible durante (segundos)
+periodHours = Cada (horas de juego)
+hideInCombat = Ocultar en combate
+showInConsole = Mantener visible con la consola abierta
+showInConsole.tip = La consola pausa el juego y el widget normalmente se oculta cuando el juego está en pausa.\nDesactívala para ocultarlo también con la consola.
+hideInDialogue = Ocultar durante las conversaciones
+hideInDialogue.tip = Oculta el widget mientras hablas con alguien (el menú de diálogo está abierto) y lo devuelve al terminar la conversación.
+hideInFurnitureMenu = Ocultar en los menús de mobiliario
+hideInFurnitureMenu.tip = Oculta el widget mientras un menú de mobiliario está abierto: el aviso de camas, sillas y otros muebles, y las pantallas de artesanía (forja, piedra de afilar, banco de trabajo, alquimia, encantamiento, cocina).
+
+# ---- menú de ajustes: lunas ----
+showMasser = Mostrar Masser (luna mayor)
+showMasser.tip = Masser completa su ciclo en 24 días de juego.
+showSecunda = Mostrar Secunda (luna menor)
+showSecunda.tip = Secunda completa su ciclo en 31 días de juego.
+masser.x = Masser X
+masser.y = Masser Y
+masser.scale = Tamaño de Masser (%)
+secunda.x = Secunda X
+secunda.y = Secunda Y
+secunda.scale = Tamaño de Secunda (%)
+showSky = Placa de cielo nocturno
+showSky.tip = El círculo oscuro con estrellas detrás de las lunas.\nDesactívala para ver solo dos lunas flotando.
+showStars = Estrellas
+customColor = Color personalizado
+customColor.tip = Desactivado: las lunas conservan sus colores naturales (Masser cálida y pálida, Secunda azulada) sobre cielo nocturno.\nActivado: toda la imagen se tiñe con el color que elijas, conservando sus luces y sombras.
+badgeColor = Color de la insignia
+
+# ---- menú de ajustes: texto de fase ----
+showLabel = Mostrar el nombre de la fase
+labelSource = Fase de
+labelSource.0 = Masser
+labelSource.1 = Secunda
+label.x = Texto X
+label.y = Texto Y
+label.scale = Tamaño del texto (%)
+shadow = Sombra del texto
+textColor = Color del texto
+
+# ---- menú de ajustes: posición ----
+anchor = Posición en pantalla
+anchor.0 = Arriba izquierda
+anchor.1 = Arriba centro
+anchor.2 = Arriba derecha
+anchor.3 = Medio izquierda
+anchor.4 = Centro
+anchor.5 = Medio derecha
+anchor.6 = Abajo izquierda
+anchor.7 = Abajo centro
+anchor.8 = Abajo derecha
+marginX = Desplazamiento X
+marginY = Desplazamiento Y
+scale = Tamaño (%)
+opacity = Opacidad (%)
+
+# ---- menú de ajustes: idioma ----
+lang.active = Idioma activo:
+lang.file = Archivo de traducción:
+lang.builtin = (valores predeterminados en inglés)
+lang.reload = Recargar traducción
+lang.reloadDone = Traducción recargada:
+lang.hint = Para traducir el mod, copia MoonPhaseHUD_template.txt como MoonPhaseHUD_<idioma>.txt\nen Data\Interface\Translations y edita los textos.\nEl idioma se toma del juego (SkyrimPrefs.ini, sLanguage); también puedes forzarlo\ncon Language=... en Data\SKSE\Plugins\MoonPhaseHUD.ini. Las claves que falten usan el inglés.\nLos cambios se leen al iniciar el juego, o al momento con el botón Recargar.
+
+# ---- menú de ajustes: vista previa y botones ----
+preview.masser = Masser:
+preview.secunda = Secunda:
+saveNow = Guardar ahora
+resetDefaults = Restablecer valores predeterminados

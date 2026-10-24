@@ -1,0 +1,110 @@
+# Moon Phases HUD - translation template.
+# 1) Copy this file as MoonPhaseHUD_<language>.txt  (example: MoonPhaseHUD_french.txt)
+# 2) Translate the value on the right of each '=' (keep the key unchanged).
+# 3) Put it in Data\Interface\Translations\ . The game language is detected automatically;
+#    you can also set Language=<language> in Data\SKSE\Plugins\MoonPhaseHUD.ini.
+# Format: key = value (one per line, UTF-8). Lines starting with # are comments.
+# Write \n inside a value for a line break. Keys you delete or leave empty use English.
+
+# ---- moon phase names (shown under the widget) ----
+phase.0 = New moon
+phase.1 = Waxing crescent
+phase.2 = First quarter
+phase.3 = Waxing gibbous
+phase.4 = Full moon
+phase.5 = Waning gibbous
+phase.6 = Last quarter
+phase.7 = Waning crescent
+
+# ---- moon proper names ----
+moon.masser = Masser
+moon.secunda = Secunda
+
+# ---- settings menu: section titles ----
+settings = Settings
+section.behaviour = Behaviour
+section.moons = Moons
+section.label = Phase text
+section.placement = Placement
+section.language = Language
+section.preview = Right now
+
+# ---- settings menu: behaviour ----
+enabled = Enabled
+mode = Display mode
+mode.0 = Always
+mode.1 = Timed (hotkey)
+mode.2 = Toggle (hotkey)
+mode.3 = Periodic
+mode.tip = Always: visible whenever no menu is open.\nTimed: visible for a few seconds after the hotkey.\nToggle: the hotkey shows and hides the widget.\nPeriodic: pops up every few in-game hours.
+hotkey = Hotkey:
+hotkey.click = (click to change)
+hotkey.capture = Press a key... (Esc to cancel)
+showDuration = Visible for (seconds)
+periodHours = Every (in-game hours)
+hideInCombat = Hide in combat
+showInConsole = Keep visible while the console is open
+showInConsole.tip = The console pauses the game and the widget normally hides while paused.\nUncheck to hide it with the console too.
+hideInDialogue = Hide during conversations
+hideInDialogue.tip = Hides the widget while you talk to someone (the dialogue menu is open) and brings it back when the conversation ends.
+hideInFurnitureMenu = Hide in furniture menus
+hideInFurnitureMenu.tip = Hides the widget while a furniture menu is open: the prompt for beds, chairs and other furniture, and the crafting screens (forge, grindstone, workbench, alchemy, enchanting, cooking).
+
+# ---- settings menu: moons ----
+showMasser = Show Masser (greater moon)
+showMasser.tip = Masser completes its cycle in 24 in-game days.
+showSecunda = Show Secunda (lesser moon)
+showSecunda.tip = Secunda completes its cycle in 31 in-game days.
+masser.x = Masser X
+masser.y = Masser Y
+masser.scale = Masser size (%)
+secunda.x = Secunda X
+secunda.y = Secunda Y
+secunda.scale = Secunda size (%)
+showSky = Night-sky plate
+showSky.tip = The dark circle with stars behind the moons.\nUncheck for two clean floating moons.
+showStars = Stars
+customColor = Custom colour
+customColor.tip = Off: the moons keep their natural colours (warm pale Masser, cool blue Secunda) on the night sky.\nOn: the whole picture is tinted with the colour you choose, keeping its lights and shadows.
+badgeColor = Badge colour
+
+# ---- settings menu: phase text ----
+showLabel = Show the phase name
+labelSource = Phase of
+labelSource.0 = Masser
+labelSource.1 = Secunda
+label.x = Text X
+label.y = Text Y
+label.scale = Text size (%)
+shadow = Text shadow
+textColor = Text colour
+
+# ---- settings menu: placement ----
+anchor = Position on screen
+anchor.0 = Top left
+anchor.1 = Top centre
+anchor.2 = Top right
+anchor.3 = Middle left
+anchor.4 = Centre
+anchor.5 = Middle right
+anchor.6 = Bottom left
+anchor.7 = Bottom centre
+anchor.8 = Bottom right
+marginX = Offset X
+marginY = Offset Y
+scale = Size (%)
+opacity = Opacity (%)
+
+# ---- settings menu: language ----
+lang.active = Active language:
+lang.file = Translation file:
+lang.builtin = (built-in English defaults)
+lang.reload = Reload translation
+lang.reloadDone = Translation reloaded:
+lang.hint = To translate the mod, copy MoonPhaseHUD_template.txt to MoonPhaseHUD_<language>.txt\nin Data\Interface\Translations and edit the texts.\nThe language is taken from the game (SkyrimPrefs.ini, sLanguage); you can also force one\nwith Language=... in Data\SKSE\Plugins\MoonPhaseHUD.ini. Missing keys fall back to English.\nChanges are read on game start, or right now with the Reload button.
+
+# ---- settings menu: preview and buttons ----
+preview.masser = Masser:
+preview.secunda = Secunda:
+saveNow = Save now
+resetDefaults = Reset to defaults
