@@ -23,6 +23,7 @@ jobs:
           repository: alandtse/CommonLibSSE-NG
           ref: ng
           path: deps/CommonLibSSE
+          submodules: recursive
 
       - name: Set up MSVC environment
         uses: ilammy/msvc-dev-cmd@v1
